@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <footer class="page">
+    <div class="page">
       <header class="header">
         <nav class="nav">
           <img
@@ -19,16 +19,16 @@
           />
           <ul class="nav__links">
             <li>
-              <a href="#staff" class="nav__link">Escolhas da Equipe</a>
+              <a class="nav__link" href="#staff">Escolhas da Equipe</a>
             </li>
             <li>
               <a class="nav__link" href="#events">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Seja um membro</a>
+              <a class="nav__link" href="#membership">Seja um membro</a>
             </li>
             <li>
-              <a class="nav__link">Contatos</a>
+              <a class="nav__link" href="#footer">Contatos</a>
             </li>
           </ul>
         </nav>
@@ -52,9 +52,8 @@
           <p class="header__address">Triple Peaks, 200 Success Avenue</p>
         </div>
       </header>
-
       <main class="content">
-        <section class="staff" id="staff"> 
+        <section class="staff" id="staff">
           <h2 class="staff__title">Escolhas da Equipe</h2>
           <p class="staff__subtitle">Que nossos leitores adoram</p>
           <ul class="staff__cards">
@@ -132,8 +131,8 @@
         <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Próximos eventos:</h2>
-            <h3 class="__title">
-             Em homenagem à Joan Feynman: Mulheres na Astrofísica
+            <h3 class="events__title">
+              Em homenagem à Joan Feynman: Mulheres na Astrofísica
             </h3>
             <div class="event-info events__info-section">
               <div class="event-info__item">
@@ -156,39 +155,41 @@
               </div>
             </div>
             <p class="events__description">
-              Neste evento, que homenageia a pessoa que inspirou o nome da biblioteca, vamos ter uma
-              palestra que vai nos levar para uma jornada explorando alguns das pesquisadoras mais
-              proeminentes no mundo da ciência espacial. É
-              fácil aceitar o equívoco de que esse campo era em sua maioria
-              dominado por homens, mas nossa palestra visa mudar essa noção e
-              provar que esse não é o caso desde, pelo menos,
-              o século XVIII.
+              Neste evento, que homenageia a pessoa que inspirou o nome da
+              biblioteca, vamos ter uma palestra que vai nos levar para uma
+              jornada explorando alguns das pesquisadoras mais proeminentes no
+              mundo da ciência espacial. É fácil aceitar o equívoco de que esse
+              campo era em sua maioria dominado por homens, mas nossa palestra
+              visa mudar essa noção e provar que esse não é o caso desde, pelo
+              menos, o século XVIII.
             </p>
             <a href="#" class="events__more">Mais eventos;</a>
           </div>
           <div class="events__cover">
-            <img class="events__image"
-            src="images/cafe.png"
-            alt="cafe icon" />
+            <img class="events__image" src="./images/cafe.png" alt="cafe" />
             <div class="person person_name_feynman">
-            <p class="person__caption">
-              Joan Feynman</p> 
-                <img src="images/person_feynman.png" 
-              alt="Feynman"
-              class="person__image person__image_size_l"/>
-              </div>
-              <div class="person person_name_burbidge">
-              <p class="person__caption">
-              Margaret Burbidge</p>
-              <img src="images/person_burbidge.png"
-              alt="foto de Burdidge"
-              class="person__image person__image_size_m"/>
-             </div>
-              <div class="person person_name_cannon">
-                <img src="images/person_cannon.png"
-               alt="foto Annie Jump Cannon"
-               class="person__image person__image_size_m"/>
-                <p class="person__caption">Annie Jump Cannon</p>
+              <p class="person__caption">Joan Feynman</p>
+              <img
+                src="./images/person_feynman.png"
+                alt=" foto da Feynman"
+                class="person__image person__image_size_l"
+              />
+            </div>
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burdidge</p>
+              <img
+                src="./images/person_burbidge.png"
+                alt="foto de Burdidge"
+                class="person__image person__image_size_m"
+              />
+            </div>
+            <div class="person person_name_cannon">
+              <img
+                src="./images/person_cannon.png"
+                alt="foto de Cannon"
+                class="person__image person__image_size_m"
+              />
+              <p class="person__caption">Annie Jump Cannon</p>
             </div>
             <div class="person person_name_mitchell">
               <img
@@ -203,13 +204,16 @@
               <img
                 src="./images/person_tarter.png"
                 alt="foto da Tarter"
-                class="person__image person__image_size_m"/>
+                class="person__image person__image_size_m"
+              />
             </div>
           </div>
           <!-- Comece a criar a composição aqui -->
         </section>
-        <section class="membership">
-          <h2 class="membership__title">Tornar-se membro da biblioteca é fácil!</h2>
+        <section class="membership" id="membership">
+          <h2 class="membership__title">
+            Tornar-se membro da biblioteca é fácil!
+          </h2>
           <ul class="membership__steps">
             <li class="step">
               <h3 class="step__title">
@@ -265,45 +269,51 @@
         </section>
       </main>
       <footer class="footer" id="footer">
-      <div class="footer__column">
         <div class="footer__columns">
-        <img src="images/logo_white.svg" 
-         alt="logo images"/>
-         <div class="footer__column footer__column_content_hours">
-          <h3 class="footer__column-heading">Horário de Funcionamento</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">Dias úteis: 9h - 20h</li>
-            <li class="footer__list-item">Finas de semana: 10h - 18h</li>
-          </ul>
-        </div>
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="./images/logo_white.svg"
+              alt=" imagem logo"
+            />
+          </div>
 
-        <div class="footer__column footer__column_content_social">
-          <h3 class="footer__column-heading">Redes sociais</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a class="footer__column-link" href="# ">
-                <img  
-                  src="./images/facebook_white.svg"
-                  alt=" imagem do facebook"
-                  class="footer__social-icon">
-                Facebook
-              </a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__column-link" href="#">
-                <img
-                  src="./images/instagram_white.svg"
-                  alt=" imagem do instagram"
-                  class="footer__social-icon"
-                />
-                Instagram
-              </a>
-            </li>
-          </ul>
+          <div class="footer__column footer__column_content_hours">
+            <h3 class="footer__column-heading">Horário de Funcionamento</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">Dias úteis: 9h - 20h</li>
+              <li class="footer__list-item">Finas de semana: 10h - 18h</li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <h3 class="footer__column-heading">Redes sociais</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="# ">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt=" imagem do facebook"
+                    class="footer__social-icon"
+                  />
+                  Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    src="./images/instagram_white.svg"
+                    alt=" imagem do instagram"
+                    class="footer__social-icon"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <p class="footer__copyright">© 2024 Felipe Augusto Colares</p>
-    </footer>
-  </div>
-</body>
+        <p class="footer__copyright">© 2024 Felipe Augusto Colares</p>
+      </footer>
+    </div>
+  </body>
 </html>
